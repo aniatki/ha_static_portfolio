@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="assets/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/scripts/script.js" defer></script>
     <title>Hasan Atki | Portfolio</title>
 </head>
+
 <body class="mx-auto max-w-5xl px-5">
     <navbar class="flex justify-between items-center py-6">
         <div class="flex gap-4">
@@ -17,72 +22,43 @@
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#contact" class="nav-link">Contact</a>
         </div>
-        <button class="rounded-lg px-4 py-2 bg-gray-900 text-gray-100">Resume</button>
+        <a download href="" class="rounded-lg px-4 py-2 bg-indigo-500 text-gray-100">Resume</a>
     </navbar>
 
     <main>
         <hero>
             <h1 class="text-3xl text-center mt-10">Hasan Atki</h1>
             <h1 class="text-5xl font-bold text-center mb-10">Full Stack Developer</h1>
-            <p>Building digital experiences with modern technologies. Focused on creating elegant solutions to complex problems.</p>
-            <div class="social-links">
-                <a href="https://github.com/aniatki/"><i class="fa fa-github-square" aria-hidden="true"></i>                </a>
-                <a href="https://linkedin.com/in/hasanatki/"><i class="fa fa-linkedin-square" aria-hidden="true"></i>                </a>
-                <a href="mailto:hasan@atki.ie"><i class="fa fa-envelope" aria-hidden="true"></i>                </a>
-                <a href="https://instagram.com/atki.web/"><i class="fa fa-instagram" aria-hidden="true"></i>                </a>
+            <p class="mb-4">Building digital experiences with modern technologies. Focused on creating elegant solutions
+                to complex problems.</p>
+            <div class="mb-4 social-links text-2xl flex justify-center gap-6">
+                <a target="_blank" href="https://github.com/aniatki/"><i class="fa fa-github-square"
+                        aria-hidden="true"></i></a>
+                <a target="_blank" href="https://linkedin.com/in/hasanatki/"><i class="fa fa-linkedin-square"
+                        aria-hidden="true"></i></a>
+                <a target="_blank" href="mailto:hasan@atki.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://instagram.com/atki.web/"><i class="fa fa-instagram"
+                        aria-hidden7="true"></i></a>
             </div>
         </hero>
 
-        <section class="projects grid md:grid-cols-2 gap-4"> 
-            <h3 class="text-3xl text-center font-bold col-span-full">Projects</h3>
-            <div class="card rounded-lg px-6 py-8 shadow-xl">
-                <img src="https://placehold.co/600x400" alt="">
-                <h5 class="card-description">Project Title</h5>
-                <p class="card-description">Project description</p>
-                <div class="tags">
+        <section class="projects grid md:grid-cols-2 gap-4" id="projects">
+            <h3 class="text-3xl text-center font-bold col-span-full mt-24">Projects</h3>
+            <div class="card rounded-lg shadow-lg">
+                <img class="mb-4 rounded-lg shadow-md" src="https://placehold.co/600x400" alt="">
+                <h5 class="mx-4 font-bold text-lg">Project Title</h5>
+                <p class="mx-4">Project description</p>
+                <div class="tags m-4">
                     <span class="shadow-md">django</span>
                     <span class="shadow-md">PostgreSQL</span>
                     <span class="shadow-md">Bulma CSS</span>
                 </div>
-                <a href="">View on GitHub</a>
-            </div>
-            <div class="card rounded-lg px-6 py-8 shadow-xl">
-                <img src="https://placehold.co/600x400" alt="">
-                <h5 class="card-description">Project Title</h5>
-                <p class="card-description">Project description</p>
-                <div class="tags">
-                    <span class="shadow-md">django</span>
-                    <span class="shadow-md">PostgreSQL</span>
-                    <span class="shadow-md">Bulma CSS</span>
-                </div>
-                <a href="">View on GitHub</a>
-            </div>
-            <div class="card rounded-lg px-6 py-8 shadow-xl">
-                <img src="https://placehold.co/600x400" alt="">
-                <h5 class="card-description">Project Title</h5>
-                <p class="card-description">Project description</p>
-                <div class="tags">
-                    <span class="shadow-md">django</span>
-                    <span class="shadow-md">PostgreSQL</span>
-                    <span class="shadow-md">Bulma CSS</span>
-                </div>
-                <a href="">View on GitHub</a>
-            </div>
-            <div class="card rounded-lg px-6 py-8 shadow-xl">
-                <img src="https://placehold.co/600x400" alt="">
-                <h5 class="card-description">Project Title</h5>
-                <p class="card-description">Project description</p>
-                <div class="tags">
-                    <span class="shadow-md">django</span>
-                    <span class="shadow-md">PostgreSQL</span>
-                    <span class="shadow-md">Bulma CSS</span>
-                </div>
-                <a href="">View on GitHub</a>
+                <a class="mx-4" href=""><i class="mb-4 fa fa-github-square" aria-hidden="true"></i> View on GitHub</a>
             </div>
         </section>
 
-        <section>
-            <h3>Tech Stack</h3>
+        <section id="about">
+            <h3 class="text-3xl text-center font-bold mt-24 mb-4">Tech Stack</h3>
             <div class="grid md:grid-cols-2 gap-4">
                 <div class="grid-cell">
                     <h5>Frontend</h5>
@@ -126,15 +102,16 @@
             </div>
         </section>
 
-        <section class="contact-form">
-            <h3>Contact</h3>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button>Send</button>
+        <section id="contact" class="contact-form mt-24 mb-12 grid-cell max-w-3xl mx-auto">
+            <h3 class="text-5xl font-bold text-center mb-4">Get in Touch</h3>
+            <form class="flex flex-col gap-4">
+                <input class="peer h-10 w-full rounded-md bg-gray-50 px-4 font-light outline-none drop-shadow-md transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-gray-700" type="text" name="name" placeholder="Name">
+                <input class="peer h-10 w-full rounded-md bg-gray-50 px-4 font-light outline-none drop-shadow-md transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-gray-700" type="email" name="email" placeholder="Email">
+                <textarea class="peer min-h-24 w-full rounded-md bg-gray-50 px-4 font-light outline-none drop-shadow-md transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-gray-700" name="message" placeholder="Message"></textarea>
+                <button class="rounded-lg px-4 py-2 bg-indigo-500 text-gray-100 mb-4">Send</button>
             </form>
         </section>
     </main>
 </body>
+
 </html>
