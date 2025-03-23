@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/username/public_html
+    - /bin/cp -r * $DEPLOY_PATH
+    - cd $DEPLOY_PATH
+    - /bin/chmod -R 755 $DEPLOY_PATH
+    - /bin/chown -R username:username $DEPLOY_PATH
