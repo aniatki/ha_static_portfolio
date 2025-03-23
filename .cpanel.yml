@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOY_PATH=/home/a588674/public_html
-    - /bin/cp -r * $DEPLOY_PATH
-    - cd $DEPLOY_PATH
-    - /bin/chmod -R 755 $DEPLOY_PATH
-    - /bin/chown -R username:username $DEPLOY_PATH
+    - /bin/cp -r * ./www
+    - cd www
+    - /bin/chmod -R 755 www
+    - /bin/chown -R username:a588674 www
