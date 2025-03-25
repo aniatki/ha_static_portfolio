@@ -78,10 +78,15 @@ table {
     background: #1f1f1f;
     color: #d6d6d6;
     text-shadow: none;
-  }
+}
   
-  ::-moz-selection {
+::-moz-selection {
     background: #1f1f1f;
     color: #d6d6d6;
     text-shadow: none;
-  }
+}
+
+img {
+    min-width: 100%;
+    height: auto;
+}
