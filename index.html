@@ -27,27 +27,33 @@
 
     <main>
         <hero>
-            <h1 class="text-3xl text-center mt-10">Hasan Atki</h1>
-            <h1 class="text-5xl font-bold text-center mb-10">Full Stack Developer</h1>
-            <p class="mb-4">Building digital experiences with modern technologies. Focused on creating elegant solutions
-                to complex problems.</p>
-            <div class="mb-4 social-links text-2xl flex justify-center gap-6">
-                <a target="_blank" href="https://github.com/aniatki/"><i class="fa fa-github-square"
-                        aria-hidden="true"></i></a>
-                <a target="_blank" href="https://linkedin.com/in/hasanatki/"><i class="fa fa-linkedin-square"
-                        aria-hidden="true"></i></a>
-                <a target="_blank" href="mailto:hasan@atki.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                <a target="_blank" href="https://instagram.com/atki.web/"><i class="fa fa-instagram"
-                        aria-hidden7="true"></i></a>
-            </div>
+        
+        
+ 
+        <h1 class="text-3xl text-center mt-10">Hasan Atki</h1>
+        <h1 class="text-5xl font-bold text-center mb-10">Full Stack Developer</h1>
+        <p class="mb-4">Building digital experiences with modern technologies. Focused on creating elegant solutions
+            to complex problems.</p>
+        <div class="mb-4 social-links text-2xl flex justify-center gap-6">
+            <a target="_blank" href="https://github.com/aniatki/"><i class="fa fa-github-square"
+                    aria-hidden="true"></i></a>
+            <a target="_blank" href="https://linkedin.com/in/hasanatki/"><i class="fa fa-linkedin-square"
+                    aria-hidden="true"></i></a>
+            <a target="_blank" href="mailto:hasan@atki.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://instagram.com/atki.web/"><i class="fa fa-instagram"
+                    aria-hidden7="true"></i></a>
+        </div>
         </hero>
 
         <section class="projects grid md:grid-cols-2 gap-4" id="projects">
             <h3 class="text-3xl text-center font-bold col-span-full mt-24">Projects</h3>
       
             <div class="card rounded-lg shadow-lg">
-                <img class="mb-4 rounded-lg shadow-md" src="https://placehold.co/600x400" alt="">
-                <h5 class="mx-4 font-bold text-lg">Dorset Bank App</h5>
+                <div class="image-sequence image-sequence-three mb-4 rounded-lg shadow-md overflow-hidden relative h-[400px]">
+                    <img src="/assets/media/images/dorset_1.png" class="sequence-img img1" alt="Image 1">
+                    <img src="/assets/media/images/dorset_2.png" class="sequence-img img2" alt="Image 2">
+                    <img src="/assets/media/images/dorset_3.png" class="sequence-img img3" alt="Image 3">
+                </div>                <h5 class="mx-4 font-bold text-lg">Dorset Bank App</h5>
                 <p class="mx-4">A local tracking system for internal staff and its accounts at Dorset College.</p>
                 <div class="tags m-4">
                     <span class="shadow-md">django</span>
@@ -56,21 +62,13 @@
                 </div>
                 <a class="mx-4" href="https://github.com/aniatki/dorset-bank-app"><i class="mb-4 fa fa-github-square" aria-hidden="true"></i> View on GitHub</a>
             </div>
-      
-            <div class="card rounded-lg shadow-lg">
-                <img class="mb-4 rounded-lg shadow-md" src="https://placehold.co/600x400" alt="">
-                <h5 class="mx-4 font-bold text-lg">To Do App</h5>
-                <p class="mx-4">A simple to do app in React</p>
-                <div class="tags m-4">
-                    <span class="shadow-md">React</span>
-                    <span class="shadow-md">CSS</span>
-                </div>
-                <a class="mx-4" href="https://github.com/aniatki/react-todo"><i class="mb-4 fa fa-github-square" aria-hidden="true"></i> View on GitHub</a>
-            </div>
 
             <div class="card rounded-lg shadow-lg">
-                <img class="mb-4 rounded-lg shadow-md" src="https://placehold.co/600x400" alt="">
-                <h5 class="mx-4 font-bold text-lg">Di Lucia's Takeaway</h5>
+                <div class="image-sequence image-sequence-three mb-4 rounded-lg shadow-md overflow-hidden relative h-[400px]">
+                    <img src="/assets/media/images/dil_1.png" class="sequence-img img1" alt="Image 1">
+                    <img src="/assets/media/images/dil_2.png" class="sequence-img img2" alt="Image 2">
+                    <img src="/assets/media/images/dil_3.png" class="sequence-img img3" alt="Image 3">
+                </div>                <h5 class="mx-4 font-bold text-lg">Di Lucia's Takeaway</h5>
                 <p class="mx-4">Di Lucia's Clonshaugh is a site designed for the people of Clonshaugh to order food from their local chip shop. The site's easy to use interface will assure for a joyful expierience of getting a hearty meal.</p>
                 <div class="tags m-4">
                     <span class="shadow-md">JavaScript</span>
@@ -114,7 +112,13 @@
             </div>
 
             <div class="card rounded-lg shadow-lg">
-                <img class="mb-4 rounded-lg shadow-md" src="https://placehold.co/600x400" alt="">
+                <div class="image-sequence mb-4 rounded-lg shadow-md overflow-hidden relative h-[400px]">
+                    <img src="/assets/media/images/lash_1.png" class="sequence-img img1" alt="Image 1">
+                    <img src="/assets/media/images/lash_2.png" class="sequence-img img2" alt="Image 2">
+                    <img src="/assets/media/images/lash_3.png" class="sequence-img img3" alt="Image 3">
+                    <img src="/assets/media/images/lash_4.png" class="sequence-img img4" alt="Image 4">
+                </div>
+
                 <h5 class="mx-4 font-bold text-lg">Lash by Belle</h5>
                 <p class="mx-4">A web-app used by a beauty salon to organise bookings and advertise their products.</p>
                 <div class="tags m-4">
@@ -182,8 +186,9 @@
                 <textarea class="peer min-h-24 w-full rounded-md bg-gray-50 px-4 font-light outline-none drop-shadow-md transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-gray-700" name="message" placeholder="Message"></textarea>
                 <button class="rounded-lg px-4 py-2 bg-indigo-500 text-gray-100 mb-4" type="submit">Send</button>
             </form>
+
         </section>
     </main>
-</body>
+    </body>
 
 </html>
