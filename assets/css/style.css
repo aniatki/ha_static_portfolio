@@ -1,3 +1,7 @@
+:root {
+    --accent: hsl(48, 70%, 42%);
+}
+
 *,
 *::before,
 *::after {
@@ -48,21 +52,6 @@ table {
     border-spacing: 0;
 }
 
-hero {
-    display: grid;
-    grid-template-columns: 1fr auto;
-}
-
-.badge-base {
-    grid-column: 1;
-}
-
-hero>h1,
-hero>p,
-hero>.social-links {
-    grid-column: 2;
-}
-
 .card {
     border: 1px solid hsla(0, 0%, 10%, .8);
 
@@ -101,6 +90,10 @@ hero>.social-links {
     text-shadow: none;
 }
 
+.accent {
+    background-color: var(--accent);
+}
+
 img {
     min-width: 100%;
 }
@@ -117,8 +110,43 @@ left: 0;
 width: 100%;
 opacity: 0;
 z-index: 0;
-animation: scrollUp 6s ease-in-out forwards;
+animation-name: scrollUp;
+animation-timing-function: ease-in-out;
+animation-fill-mode:forwards;
+animation-iteration-count: infinite;
+animation-duration: 6s;
 }
+
+/* Hover underline */
+.hover-underline {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-underline::after,
+  .hover-underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, oklch(58.5% 0.233 277.117), oklch(35.9% 0.144 278.697));
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .hover-underline::before {
+    top: -5px;
+    transform-origin: left;
+  }
+  
+  .hover-underline:hover::after,
+  .hover-underline:hover::before {
+    transform: scaleX(1);
+  }
+  
 
 /* Delay sequencing */
 .img1 { animation-delay: 0s; }
@@ -137,7 +165,7 @@ animation: scrollUp 6s ease-in-out forwards;
         z-index: 1;
     }
     10% {
-        top: 0;
+        top: 80%;
     }
     90% {
         opacity: 1;
@@ -145,7 +173,7 @@ animation: scrollUp 6s ease-in-out forwards;
     95% {
         opacity: 0;
         z-index: 0;
-        top: -100%;
+        top: 0%;
     }
     100% {
         top: -100%;
